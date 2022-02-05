@@ -1,6 +1,7 @@
 
-// Event listener
+let total = 0
 
+// Event listener
 document.addEventListener('submit',
   function (e) {
 
@@ -21,9 +22,8 @@ document.addEventListener('submit',
     const itemElement = itemRow.appendChild(document.createElement('td'));
     const priceElement = itemRow.appendChild(document.createElement('td'));
 
-    // Add dollar sign to price and output
+    // Add dollar sign to price
     const priceFormat = `$${price}`;
-    const outputFormat = `$${price}`;
 
     // Insert input values into data cells 
     const itemText = itemElement.innerText = item;
@@ -33,8 +33,14 @@ document.addEventListener('submit',
     itemElement.className = 'item-td';
     priceElement.className = 'price-td';
 
-    output.innerText = outputFormat;
+    // Add price to total
+    total += parseFloat(price);
+
+    // Add dollar sign to total
+    const totalFormat = `$${total}`;
+
+    // Output calculated total to output element
+    output.innerText = totalFormat;
 
     e.preventDefault();
-
   })
