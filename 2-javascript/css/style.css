@@ -1,0 +1,69 @@
+
+body {
+  background: lightgray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+.container {
+  position: relative;
+  background: #fff;
+  max-width: min-content;
+  margin: auto;
+  padding: 1em;
+  border: 1px rgb(153, 152, 152) solid;
+  border-radius: 1rem;
+}
+
+form {
+  margin: auto;
+  max-width: 80%;
+}
+
+.input-group {
+  margin: 1em 0 1em;
+}
+
+label {
+  display: block;
+  margin-left: 0.5em;
+  padding-bottom: 7px;
+}
+
+input {
+  max-width: 100%;
+  background: #fff; 
+  border: 1px rgb(153, 152, 152) solid;
+  border-radius: 1rem;
+}
+
+input:hover {
+  border: 1px rgb(54, 54, 54) solid;
+
+}
+
+button {
+  margin: 0 1em 1em 0;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px #555 solid;
+  border-radius: 1em;
+}
+
+button:hover {
+  background: #fff;
+}
+
+table {
+  margin: auto;
+  table-layout: fixed;
+  width: 80%;
+}
+
+.item-td {
+  text-align: left;
+}
+
+.price-td {
+  text-align: right;
+}
