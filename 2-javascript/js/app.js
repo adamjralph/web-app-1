@@ -44,3 +44,31 @@ document.addEventListener('submit',
 
     e.preventDefault();
   })
+
+// Reset display
+document.addEventListener('reset',
+
+  function () {
+
+    // Get output
+    const outputContent = document.getElementById('output');
+
+    // Get array created elements
+    const itemTds = document.getElementsByClassName('item-td');
+    const priceTds = document.getElementsByClassName('price-td');
+
+    // Loop through created elements array and remove each
+    function clearRows(array) {
+
+      Array.from(array).forEach(function (element) {
+        element.remove();
+      })
+    }
+
+    // reset output value to 0
+    outputContent.innerText = 0;
+
+    clearRows(itemTds);
+    clearRows(priceTds);
+  }
+)

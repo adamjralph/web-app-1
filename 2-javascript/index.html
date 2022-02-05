@@ -20,6 +20,7 @@
         <input required type="number" id="price" step="0.01">
       </div>
       <button type="submit" id="enter">Enter</button>
+      <button type="reset" onclick="reset()" id="reset-btn">Reset</button>
     </form>
     
     <table id="table">
@@ -32,11 +33,9 @@
         <tr class="total-output">
           <td class="total-td">
             Total:
-            <!-- <hr> -->
           </td>
-          <td class="output-td">
-            <output id="output">0</output>
-            <!-- <hr> -->
+          <td class="output-td" id="output">
+            0
           </td>
         </tr>
         
