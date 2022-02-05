@@ -58,6 +58,11 @@ table {
   margin: auto;
   table-layout: fixed;
   width: 80%;
+  border-collapse: collapse;
+}
+
+.total-output {
+  border-bottom: 1px rgb(153, 152, 152) solid;
 }
 
 .item-td,
