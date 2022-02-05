@@ -37,7 +37,7 @@ document.addEventListener('submit',
     total += parseFloat(price);
 
     // Add dollar sign to total
-    const totalFormat = `$${total}`;
+    const totalFormat = `$${total.toFixed(2)}`;
 
     // Output calculated total to output element
     output.innerText = totalFormat;
