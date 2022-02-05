@@ -9,8 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- <form oninput="result.value=parseFloat(price.value)" id="expense-form"> -->
-    <form id="expense-form">
+    <form id="expense-form" autocomplete="off">
       <div class="input-group">
         <label for="item">Item</label>
         <input required type="text" id="item" >
@@ -20,7 +19,7 @@
         <input required type="number" id="price" step="0.01">
       </div>
       <button type="submit" id="enter">Enter</button>
-      <button type="reset" onclick="reset()" id="reset-btn">Reset</button>
+      <button type="reset" id="reset-btn">Reset</button>
     </form>
     
     <table id="table">

@@ -1,8 +1,10 @@
 
 let total = 0
+// document.getElementById('expense-form').reset();
 
 // Event listener
 document.addEventListener('submit',
+
   function (e) {
 
     // Get input values
@@ -42,8 +44,17 @@ document.addEventListener('submit',
     // Output calculated total to output element
     output.innerText = totalFormat;
 
+    // Reset values
+    function resetValues() {
+      const item = document.getElementById('item').value = '';
+      const price = document.getElementById('price').value = '';
+    }
+
+    resetValues();
+
     e.preventDefault();
   })
+
 
 // Reset display
 document.addEventListener('reset',
@@ -70,5 +81,8 @@ document.addEventListener('reset',
 
     clearRows(itemTds);
     clearRows(priceTds);
+
+    // Set Total to 0
+    total = 0;
   }
 )
